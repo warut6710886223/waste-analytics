@@ -22,6 +22,8 @@ st.caption(
 # ==================================================
 # 2. อ่านไฟล์ Excel จาก Repository
 # ==================================================
+from pathlib import Path
+
 DATA_FILE = Path(_file_).parent / "data.xlsx"
 
 if not DATA_FILE.exists():
