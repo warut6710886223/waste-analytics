@@ -24,7 +24,7 @@ st.caption(
 # ==================================================
 from pathlib import Path
 
-DATA_FILE = Path(_file_).parent / "data.xlsx"
+DATA_FILE = Path(__file__).parent / "data.xlsx"
 
 if not DATA_FILE.exists():
     st.error(
